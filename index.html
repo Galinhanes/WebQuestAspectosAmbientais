@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="gl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="webquest">
+    <meta name="description"
+        content="Wequest onde porás a proba os teus coñecementos sobre aspectos ambientais">
+    <meta property="og:title" content="WebQuest Aspectos Ambientais" />
+    <meta property="og:image" content="https://www.tecnovino.com/wp-content/uploads/2021/05/Tecnovino-vinedo-en-Espana-informe-MAPA.jpg" />
+    <meta property="og:description"
+        content="Wequest onde porás a proba os teus coñecementos sobre aspectos ambientais" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GaliWebQuest" />
+    <meta property="og:locale" content="gl_ES">
     <title>WebQuest Juan Galiñanes</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -11,7 +21,7 @@
 <body>
     <header>
         <h1 id="comezo">WebQuest: Análise de Aspectos e Impactos Ambientais dunha Bodega de Viño</h1>
-        <nav><a href="#inicio">Inicio</a><a href="#introduccion">Introdución</a><a href="#tarefa">Tarefa</a><a
+        <nav><a href="#inicio">Inicio</a><a href="#introduccion">Tarefa</a><a href="#tarefa">Proceso a realizar</a><a
                 href="#recursos">Recursos</a><a href="#autoevaluacion">Autoavaliación</a><a
                 href="#conclusion">Conclusión</a></nav>
 
@@ -26,7 +36,7 @@
             <div class="uvas1" id="uvas1"><img src="./assets/uvas.png" alt=""></div>
         </section>
         <section class="introduccion" id="introduccion">
-            <h2>Introdución</h2>
+            <h2>Tarefa</h2>
             <p>Benvido/a a esta tarefa, onde o teu coñecemento técnico e a túa visión ambiental serán postos a
                 proba. O sector vitivinícola, arraigado na tradición, afronta hoxe o desafío ineludible da
                 sustentabilidade.
@@ -53,7 +63,7 @@
             <div class="uvas2" id="uvas2"><img src="./assets/uvas2.png" alt=""></div>
         </section>
         <section class="tarefa" id="tarefa">
-            <h2>Tarefas a realizar</h2>
+            <h2>Proceso a realizar</h2>
             <ul>
                 <li><strong>Análise e Mapeo do Proceso Produtivo (Diagrama de Fluxo):</strong> Elabora un diagrama de
                     fluxo detallado que represente visualmente todas as etapas críticas do proceso de produción do viño,
@@ -108,13 +118,13 @@
                 <ul>
                     <li><a
                             href="https://sigi.sic.gov.co/SIGI/files/mod_documentos/anexos/801/NORMA%20ISO%2014001.2015.pdf">Norma
-                            ISO-14001</a></li>
+                            ISO-14001 <img src="./assets/disponhible.png" alt="" class="minifrecha"></a></li>
                     <li><a
                             href="https://gestionambiental.usta.edu.co/media/attachments/2023/08/28/guia-aspectos-e-impactos-ambientales.pdf">Guía
-                            de identificación de aspectos e avaliación de impactos ambientais</a></li>
+                            de identificación de aspectos e avaliación de impactos ambientais<img src="./assets/disponhible.png" alt="" class="minifrecha"></a></li>
                     <li><a
                             href="https://doriasbaixas.com/como-se-elabora-el-vino-estas-son-todas-las-fases-y-procesos/">Explicación
-                            das etapas de produción do viño</a></li>
+                            das etapas de produción do viño<img src="./assets/disponhible.png" alt="" class="minifrecha"></a></li>
                 </ul>
             </div>
 
@@ -134,7 +144,8 @@
                 </thead>
                 <tbody>
                     <tr class="destacado">
-                        <td class="primeiracolumna">O diagrama de fluxo do proceso é claro e completo, abarcando desde a colleita ata o
+                        <td class="primeiracolumna">O diagrama de fluxo do proceso é claro e completo, abarcando desde a
+                            colleita ata o
                             empaquetado.
                         </td>
                         <td class="puntuacion-col"><input type="radio" name="criterio1" value="1"
@@ -145,7 +156,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr class="destacado">
-                        <td class="primeiracolumna">Identificáronse mínimo 5 aspectos ambientais por cada etapa do proceso (Ex: Vinificación,
+                        <td class="primeiracolumna">Identificáronse mínimo 5 aspectos ambientais por cada etapa do
+                            proceso (Ex: Vinificación,
                             Embotellado, Viñedo, etc.).</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio2" value="1"
                                 onclick="calcularTotal()"></td>
@@ -155,7 +167,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr class="destacado">
-                        <td class="primeiracolumna">A relación entre o Aspecto Ambiental e a actividade da bodega está correctamente definida
+                        <td class="primeiracolumna">A relación entre o Aspecto Ambiental e a actividade da bodega está
+                            correctamente definida
                             (Ex: "Consumo de auga" asociado a "Lavado de tanques").</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio3" value="1"
                                 onclick="calcularTotal()"></td>
@@ -165,7 +178,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr class="destacado">
-                        <td class="primeiracolumna">Cada aspecto ambiental ten asociado un impacto ambiental lóxico e relevante (Ex: "Xeración
+                        <td class="primeiracolumna">Cada aspecto ambiental ten asociado un impacto ambiental lóxico e
+                            relevante (Ex: "Xeración
                             de residuos de poda", "Risco de incendios/Emisións por queima").</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio4" value="1"
                                 onclick="calcularTotal()"></td>
@@ -175,7 +189,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr class="destacado">
-                        <td class="primeiracolumna">As Medidas de Mitigación e Control propostas son específicas, realistas e tecnicamente
+                        <td class="primeiracolumna">As Medidas de Mitigación e Control propostas son específicas,
+                            realistas e tecnicamente
                             aplicables a unha bodega de viño.</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio5" value="1"
                                 onclick="calcularTotal()"></td>
@@ -185,7 +200,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr class="destacado">
-                        <td class="primeiracolumna">EAs medidas de mitigación buscan a prevención na fonte (prioridade segundo ISO 14001) e non
+                        <td class="primeiracolumna">EAs medidas de mitigación buscan a prevención na fonte (prioridade
+                            segundo ISO 14001) e non
                             só o control ao final do proceso.</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio6" value="1"
                                 onclick="calcularTotal()"></td>
@@ -195,7 +211,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr class="destacado">
-                        <td class="primeiracolumna">Establécense criterios obxectivos para avaliar a Significancia (SA)</td>
+                        <td class="primeiracolumna">Establécense criterios obxectivos para avaliar a Significancia (SA)
+                        </td>
                         <td class="puntuacion-col"><input type="radio" name="criterio7" value="1"
                                 onclick="calcularTotal()"></td>
                         <td class="puntuacion-col"><input type="radio" name="criterio7" value="0.5"
@@ -204,7 +221,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr>
-                        <td class="primeiracolumna">A asignación de valores (Puntuación) na matriz Aspecto/Impacto/Significancia é
+                        <td class="primeiracolumna">A asignación de valores (Puntuación) na matriz
+                            Aspecto/Impacto/Significancia é
                             coherente cos criterios definidos (Ex: Un impacto con alto
                             incumprimento legal recibe unha puntuación alta de SA).</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio8" value="1"
@@ -215,7 +233,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr class="destacado">
-                        <td class="primeiracolumna">Os Aspectos Ambientais Significativos foron identificados correctamente e están
+                        <td class="primeiracolumna">Os Aspectos Ambientais Significativos foron identificados
+                            correctamente e están
                             claramente diferenciados (Son a base para os Obxectivos Ambientais do S.G.A.).</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio9" value="1"
                                 onclick="calcularTotal()"></td>
@@ -225,7 +244,8 @@
                                 onclick="calcularTotal()"></td>
                     </tr>
                     <tr>
-                        <td class="primeiracolumna">A Matriz de Aspectos e Impactos Ambientais cumpre coa estrutura e formato da
+                        <td class="primeiracolumna">A Matriz de Aspectos e Impactos Ambientais cumpre coa estrutura e
+                            formato da
                             plantilla de Excel proporcionada.</td>
                         <td class="puntuacion-col"><input type="radio" name="criterio10" value="1"
                                 onclick="calcularTotal()"></td>
@@ -245,9 +265,32 @@
         </section>
         <section class="conclusion" id="conclusion">
             <h2>Conclusión</h2>
+            <p>A realización desta WebQuest permitiu establecer as bases sólidas para un Sistema de Xestión Ambiental
+                (SGA) conforme á Norma ISO 14001:2015 na adega.
+<br><br>
+                Mediante a análise do ciclo produtivo, identificamos de forma sistemática os Aspectos Ambientais e os
+                seus Impactos asociados. A elaboración do diagrama de fluxo e a Matriz Aspectos/Impactos Ambientais
+                resultou esencial para:
+<br>
+                -Priorizar: Definir os Criterios de Significancia permitiu centrar os esforzos nos impactos ambientais
+                máis críticos da adega.
+<br>
+                -Actuar: Propoñer Medidas de Mitigación e Control específicas orientadas á prevención na fonte,
+                asegurando o compromiso coa mellora continua.
+<br><br>
+                En resumo, a Matriz finalizada é a ferramenta central que transforma a ambición ambiental da adega en
+                obxectivos medibles, garantindo que a produción de viño se faga con responsabilidade e excelencia
+                ambiental.
+            </p>
         </section>
         <a href="#comezo" class="fixado"><img src="./assets/frecha.png" alt=""></a>
     </main>
+    <footer>
+        <div class="footer">
+        <p>As fotografías foron descargadas de pexels.com. Os fondos , as uvas flotantes e os fotogramas do barril foron xeradas con Gemini. As frechas son ilustracións propias</p>
+        <br>
+        <p>&copy;2025 Juan Galiñanes. Todos os dereitos reservados</p></div>
+    </footer>
     <script src="./scripts/script.js"></script>
 </body>
 

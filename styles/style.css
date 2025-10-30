@@ -4,13 +4,18 @@
     outline: 0;
     box-sizing: border-box;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
     background: ;
     color: ;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    background-image: url(../assets/Gemini_Generated_Image_oa598poa598poa59.png);
+    background-repeat: repeat;
 }
 
 body,
@@ -27,6 +32,7 @@ button {
 
 h2 {
     color: #f0ed65;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
     text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
     margin-bottom: 1vw;
@@ -44,38 +50,46 @@ ul {
 
 
 table {
-            border-collapse: collapse;
-            width: 80%;
-            margin: 20px auto;
-            font-family: Arial, sans-serif;
-         
-        }
-        th, td {
-            border: 1px solid #ddd;
-            background-color: white;
-            padding: 8px;
-            text-align: left;
-        }
-        thead th {
-            background-color: #a59090;
-            text-align: center;
-        }
-        thead th:first-child {
-            text-align: left;
-        }
-        .primeiracolumna{
-            background-color: #beaaaa;
-        }
-        /* Estilo para centrar los botones de radio en las celdas de puntuación */
-        .puntuacion-col {
-            text-align: center;
-            width: 100px; /* Ancho fijo para las columnas de puntuación */
-        }
-        /* Estilo para la fila de Total */
-        tfoot td {
-            font-weight: bold;
-            background-color: #c7a16f;
-        }
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    background-color: white;
+    padding: 8px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #a59090;
+    text-align: center;
+}
+
+thead th:first-child {
+    text-align: left;
+}
+
+.primeiracolumna {
+    background-color: #beaaaa;
+}
+
+/* Estilo para centrar los botones de radio en las celdas de puntuación */
+.puntuacion-col {
+    text-align: center;
+    width: 100px;
+    /* Ancho fijo para las columnas de puntuación */
+}
+
+/* Estilo para la fila de Total */
+tfoot td {
+    font-weight: bold;
+    background-color: #c7a16f;
+}
 
 
 
@@ -126,8 +140,8 @@ nav a {
     font-size: clamp(14px, 1.5vw, 30px);
     font-weight: 600;
     transition: all 0.5s linear;
-   box-shadow:inset -15px -7px 5px rgba(0, 0, 0, 0.274),10px 5px 5px rgba(0, 0, 0, 0.274);
-   
+    box-shadow: inset -15px -7px 5px rgba(0, 0, 0, 0.274), 10px 5px 5px rgba(0, 0, 0, 0.274);
+
 }
 
 @property --porcentaxe1 {
@@ -167,7 +181,7 @@ nav a {
 
 nav a:hover {
     background: linear-gradient(180deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-    box-shadow:inset -5px 0px 5px rgba(0, 0, 0, 0.274),2px 0px 5px rgba(0, 0, 0, 0.274);
+    box-shadow: inset -5px 0px 5px rgba(0, 0, 0, 0.274), 2px 0px 5px rgba(0, 0, 0, 0.274);
 }
 
 header h1 {
@@ -184,8 +198,7 @@ main {
     display: flex;
 
     flex-direction: column;
-    background-image: url(../assets/Gemini_Generated_Image_oa598poa598poa59.png);
-    background-repeat: repeat;
+    
 
 }
 
@@ -206,21 +219,35 @@ section {
     -webkit-box-shadow: 8px 9px 9px 5px rgba(0, 0, 0, 0.72);
     box-shadow: 8px 9px 9px 5px rgba(0, 0, 0, 0.72);
 }
-.uvas1{width:15vw;
-height: 15vw;
-position: absolute;
-top: 60%;
-left:80%;
-animation: uvas1 30s linear infinite;
-transition: opacity 3s linear;}
-.uvas1 img{
+
+.uvas1 {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    animation: uvas1 30s linear infinite;
+    transition: opacity 3s linear;
+}
+
+.uvas1 img {
     width: 100%;
     height: 100%;
 }
-@keyframes uvas1 {0%,100%{rotate:-25deg}
-50%{rotate: 25deg;}
-    
+
+@keyframes uvas1 {
+
+    0%,
+    100% {
+        rotate: -25deg
+    }
+
+    50% {
+        rotate: 25deg;
+    }
+
 }
+
 .introduccion {
     text-align: justify;
 }
@@ -236,21 +263,35 @@ transition: opacity 3s linear;}
     width: 100%;
     margin-top: 1vw;
 }
-.uvas2{width:15vw;
-height: 15vw;
-position: absolute;
-top: 230%;
-left:5%;
-animation: uvas2 30s linear infinite;
-transition: opacity 3s linear;}
-.uvas2 img{
+
+.uvas2 {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 230%;
+    left: 5%;
+    animation: uvas2 30s linear infinite;
+    transition: opacity 3s linear;
+}
+
+.uvas2 img {
     width: 100%;
     height: 100%;
 }
-@keyframes uvas2 {0%,100%{rotate:25deg}
-50%{rotate: -25deg;}
-    
+
+@keyframes uvas2 {
+
+    0%,
+    100% {
+        rotate: 25deg
+    }
+
+    50% {
+        rotate: -25deg;
+    }
+
 }
+
 .imaxe1 img {
     width: 100%;
     border-radius: 1vw;
@@ -264,8 +305,8 @@ transition: opacity 3s linear;}
 }
 
 .descargaexcell {
-    
-box-shadow: 0px 18px 15px -1px #000000;
+
+    box-shadow: 0px 18px 15px -1px #000000;
     width: 10vw;
     height: 10vw;
     border: 1px solid;
@@ -275,49 +316,70 @@ box-shadow: 0px 18px 15px -1px #000000;
     color: rgb(194, 13, 13);
     transition: all 0.5s linear;
     background: #e06a46;
-    background: linear-gradient(180deg, rgba(224, 106, 70, 1) 0%, rgba(217, 22, 149, 1) 50%, rgba(247, 22, 22, 1) 100%);
+    background: linear-gradient(180deg, rgba(224, 106, 70, 1) var(--porcentaxe1), rgba(217, 22, 149, 1) var(--porcentaxe2), rgba(247, 22, 22, 1) var(--porcentaxe3));
+     animation: fondofooter 5s linear infinite;
 }
 
 .descargaexcell:hover {
     border-bottom: 0.1vw solid;
     box-shadow: 0px 5px 5px -1px #000000;
 }
-.contedorbarril{
+
+.contedorbarril {
     width: 20vw;
     height: 20vw;
     left: 70%;
     top: 400%;
     position: absolute;
-    rotate:30deg;
+    rotate: 30deg;
     transition: opacity 3s linear;
 }
-.barril{
-position: absolute;
-width: 100%;
-height: 100%;
-opacity: 0%;
-animation: barril 1s linear infinite;
+
+.barril {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    animation: barril 1s linear infinite;
 }
-.barril2{
+
+.barril2 {
     animation-delay: 0.2s;
 }
-.barril3{
+
+.barril3 {
     animation-delay: 0.4s;
 }
-.barril4{
+
+.barril4 {
     animation-delay: 0.6s;
 }
-.barril5{
+
+.barril5 {
     animation-delay: 0.8s;
 }
-@keyframes barril {0%,100%{
-    opacity: 100%;
+
+@keyframes barril {
+
+    0%,
+    100% {
+        opacity: 100%;
+    }
+
+    20% {
+        opacity: 100%;
+    }
+
+    21.001% {
+        opacity: 0%;
+    }
+
+    99.999% {
+        opacity: 0%;
+    }
+
 }
-20%{opacity: 100%;}
-21.001%{opacity: 0%;}
-99.999%{opacity: 0%;}
-    
-}
+
 .descargaexcell img {
     width: 100%;
     height: 100%;
@@ -356,20 +418,59 @@ animation: barril 1s linear infinite;
     margin-bottom: 2vw;
     gap: 2vw;
 }
-.fixado{
+
+.fixado {
     width: 10vw;
     height: 10vw;
     position: fixed;
     left: 85vw;
-    bottom:2vw
+    bottom: 2vw
 }
-.fixado img{width: 100%;
-height: 100%;
-animation: frecha 3s linear infinite;}
-@keyframes frecha {0%,100%{scale: 1;}
-50%{scale:0.8}
-    
+
+.fixado img {
+    width: 100%;
+    height: 100%;
+    animation: frecha 3s linear infinite;
 }
+
+@keyframes frecha {
+
+    0%,
+    100% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 0.8
+    }
+
+}
+
+.conclusion {
+    margin-bottom: 5vw;
+}
+
+
+
+
+.minifrecha{
+    width: clamp(14px, 1.8vw, 30px);
+    height: clamp(14px, 1.8vw, 30px);
+    rotate:-90deg
+}
+.minifrecha img{
+    width:100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/*querys*/
 @media(max-width:700px) {
     iframe {
         width: 80vw;
@@ -377,6 +478,28 @@ animation: frecha 3s linear infinite;}
     }
 }
 
+.footer{
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw;
+   border-top: 1vw ridge rgb(40, 177, 142);
+   border-left: 1vw ridge rgb(40, 177, 142);
+   border-right: 1vw groove rgb(40, 177, 142);
+   border-top-left-radius: 10vw;
+   border-top-right-radius: 10vw;
+   background: #b5e8c3;
+background: linear-gradient(180deg,rgba(181, 232, 195, 1) var(--porcentaxe1), rgba(78, 207, 132, 1) var(--porcentaxe2), rgba(18, 99, 75, 1) var(--porcentaxe3));
+animation: fondofooter 10s linear infinite;
+}
+.footer p{
+    text-align: center;
+    text-shadow: 3px 3px 3px white;
+    font-weight: 600;
+}
 @media(max-width:600px) {
     header {
         width: 100vw;
@@ -396,53 +519,100 @@ animation: frecha 3s linear infinite;}
     ul {
         margin-left: 4vw;
     }
-.fixado{
-    width: 20vw;
-    height: 20vw;
-    position: fixed;
-    left: 75vw;
-    bottom:5vw
+
+    .fixado {
+        width: 20vw;
+        height: 20vw;
+        position: fixed;
+        left: 75vw;
+        bottom: 5vw
+    }
+
+    .descargaexcell {
+        width: 20vw;
+        height: 20vw;
+    }
+    .footer{
+    width: 100%;
+    height: 27vw;
+   
 }
-.descargaexcell {width: 20vw;
-height: 20vw;}
 }
 
 @media(max-width:410px) {
     td:first-child {
         font-size: 10px;
     }
+     .footer{
+    width: 100%;
+    height: 37vw;
+   
+}
+}
+@media(max-width:325px) {
+    
+     .footer{
+    width: 100%;
+    height: 45vw;
+   
+}
+}
+@media(max-width:300px) {
+    
+     .footer{
+    width: 100%;
+    height: 65vw;
+   
+}
 }
 @media(max-width:1070px) {
-  .uvas1{width:15vw;
-height: 15vw;
-position: absolute;
-top: 40%;
-left:80%;
+    .uvas1 {
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+    }
+
+    .uvas2 {
+        width: 15vw;
+        height: 15vw;
+        position: absolute;
+        top: 170%;
+        left: 5%;
+    }
 }
- .uvas2{width:15vw;
-height: 15vw;
-position: absolute;
-top: 170%;
-left:5%;
-}
-}
+
 @media(max-width:550px) {
-  .uvas1{width:20vw;
-height: 20vw;
-position: absolute;
-top: 55%;
-left:80%;
+    .uvas1 {
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        top: 55%;
+        left: 80%;
+    }
+
+    .uvas2 {
+        width: 20vw;
+        height: 20vw;
+        position: absolute;
+        top: 170%;
+        left: 5%;
+    }
+
+    thead th {
+        font-size: 10px;
+    }
 }
- .uvas2{width:20vw;
-height: 20vw;
-position: absolute;
-top: 170%;
-left:5%;
-}
-thead th {font-size: 10px;}
-}
+
 @media(max-width:350px) {
 
-tbody {font-size: 8px;}
-th, td {padding: 2px;}
+    tbody {
+        font-size: 8px;
+    }
+
+    th,
+    td {
+        padding: 2px;
+    }
 }
